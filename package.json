@@ -22,7 +22,7 @@
 		"start:webpack": "node dist/server",
 		"start:pm2": "pm2-runtime start ecosystem.config.js --env production",
 		"compodoc": "npx compodoc --port 11047 -p tsconfig.json -s",
-		"heroku-postbuild": "yarn --only=dev --no-shrinkwrap && yarn build"
+		"heroku-postbuild": "npm i --only=dev --no-shrinkwrap && npm run build"
 	},
 	"dependencies": {
 		"@nestjs/common": "^6.4.1",
