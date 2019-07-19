@@ -37,7 +37,7 @@ dotenv.config()
 declare const module: any
 
 const port = process.env.PORT || 3001
-const domain = 'devcloud3.digihcs.com'
+const domain = 'localhost'
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule, {
