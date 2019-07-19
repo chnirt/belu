@@ -36,7 +36,7 @@ dotenv.config()
 
 declare const module: any
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 4000
 const domain = 'localhost'
 
 async function bootstrap() {
